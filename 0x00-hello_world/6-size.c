@@ -6,10 +6,13 @@
  * command sizeof
  * Return: 0 (success)
 */
-
 int main(void)
 {
-	int my_var = 22;
-	printf("the size of my_var: %d buytes\n", sizeof(my_var));
+	char my_var = 55;
+	printf("Size of a char : %d buyte(s) \n ", sizeof(my_var));
+	printf("Size of an int : %d buyte(s) \n ", sizeof(my_var));
+	printf("Size of a float : %d buyte(s) \n ", sizeof(my_var));
+	printf("Size of a long int : %d buyte(s) \n ", sizeof(my_var));
+	printf("Size of a long long int : %d buyte(s) \n ", sizeof(my_var));
 	return (0);
 }
