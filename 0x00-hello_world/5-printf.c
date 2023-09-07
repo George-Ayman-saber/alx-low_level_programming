@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main -start point
- * this is a c language pogram to print with
- * printf
- * and return always if sucess(0)
+ * main - start point
+ * Description : this is a c language pogram to print with function printf
+ * Return: always 0 (SUCCESS)
 */
 
 int main(void)
