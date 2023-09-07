@@ -2,8 +2,8 @@
 
 /**
  * main - startpoint
- * description :this prog to write witout  printf and puts
- * return: 1( success)
+ * Description :this prog to write witout  printf and puts
+ * Return: 1( success)
 */
 
 int main(void)
