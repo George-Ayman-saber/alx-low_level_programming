@@ -3,7 +3,7 @@
 /**
  * main - startpoint
  * description :this prog to write witout  printf and puts
- * return:1 success
+ * return: 1( success)
 */
 
 int main(void)
