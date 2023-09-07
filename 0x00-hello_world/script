@@ -3,6 +3,6 @@ echo "file name "
 read var
 echo "content"
 read content
-echo "${content}" >${var}.c
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 ${var}.c
-
+echo "#!/bin/bash
+${content}" > ${var}
+chmod +x  ${var}
