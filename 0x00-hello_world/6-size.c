@@ -7,9 +7,9 @@
  * Return: 0 (success)
 */
 
-int main (void)
+int main(void)
 {
 	int my_var = 22;
-	printf("the size of my_var is%d buytes\n", sizeof(my_var));
-	return(0);
+	printf("the size of my_var: %d buytes\n", sizeof(my_var));
+	return (0);
 }
