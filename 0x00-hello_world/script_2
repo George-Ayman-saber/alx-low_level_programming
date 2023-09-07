@@ -6,5 +6,7 @@ read content
 echo "gcc - ?"
 read var2
 echo "gcc -{var2} 
-${content} > ${var}.c
+int main(void) (
+${content}
+return 0;)" > ${var}.c
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 ${var}.c
