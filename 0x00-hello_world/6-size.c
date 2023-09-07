@@ -2,7 +2,8 @@
 
 /**
  * main - Entry point
- * Description :this is the progrom to show the size of various type with command sizeof
+ * Description :this is the progrom to show the size of
+ * various type with command sizeof
  * Return: 0 (success)
 */
 
