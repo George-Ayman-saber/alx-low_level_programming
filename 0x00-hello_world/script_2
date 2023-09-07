@@ -1,8 +1,9 @@
-#!/bin/bash
-echo "file name "
+echo "file_name"
 read var
 echo "content"
 read content
-echo "${content}" >${var}.c
+echo "gcc - ?"
+read var2
+echo "gcc -{var2} 
+${content} > ${var}.c
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 ${var}.c
-
