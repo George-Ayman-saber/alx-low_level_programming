@@ -9,17 +9,18 @@
 
 int main(void)
 {
-	if (g > 0)
+	int n ;
+	if (n > 0)
 	{
-		printf("g is positive\n");
+		printf("%d is positive\n",n);
 	}
-	else if (g < 0)
+	else if (n < 0)
 	{
-		printf("g is negative \n");
+		printf("%d is negative \n",n);
 	}
 	else
 	{
-		printf("g is equal to zero\n");
+		printf("%d is equal to zero\n",n);
 	}
 	return (0);
 }
