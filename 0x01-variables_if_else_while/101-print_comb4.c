@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * main - startpoint
+ * Description : i try so hard with Marco cohort and Jana
+ * Return : 0 (success) */
 int main(void) 
 {
 	int i, j,k;
