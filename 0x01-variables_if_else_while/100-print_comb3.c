@@ -3,20 +3,26 @@
 /**
  * main - startpoint
  * Description: this is a c program that print
- * the single digits from 0 to 9 with comma
+ * the  two different digits
  * Return: 0 (success)
 */
 
 int main(void)
 {
-	int i;
+	int i, j;
 
-	for (i = 1; i <= 89; i++)
+	for (i = 0; i < 9; i++)
 	{
-		printf("%02d", i);
-		if (i == 89)
-			break;
-		printf(", ");
+		for (j = i + 1; j < 10; j++)
+		{
+			putchar(i + '0');
+			putchar(j + '0');
+			if (i != 8 || j != 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
 	}
 	putchar('\n');
 	return (0);
