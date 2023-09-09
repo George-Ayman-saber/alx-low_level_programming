@@ -2,7 +2,7 @@
 
 /**
  * main - startpoint
- * Description : i try so hard with Marco  and Jana
+ * Description :this is a c program that print 3 different digits
  * Return: 0 (success)
 */
 int main(void)
