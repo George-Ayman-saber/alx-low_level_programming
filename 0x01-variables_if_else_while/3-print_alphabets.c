@@ -2,19 +2,19 @@
 
 /**
  * main - startpoint
- * Description: tihs is a c program that print alphabet 
+ * Description: this is a c program that print alphabet
  * with lowercase then uppercase
  * Return: 0 (success)
 */
 
 int main(void)
 {
-	char x,y;
-	
-	for ( x = 'a'; x <= 'z'; x++)
+	char x, y;
+
+	for (x = 'a'; x <= 'z'; x++)
 		putchar(x);
-	for ( y = 'A'; y <= 'Z'; y++)
-                putchar(y);
+	for (y = 'A'; y <= 'Z'; y++)
+		putchar(y);
 	putchar('\n');
 	return (0);
 }
