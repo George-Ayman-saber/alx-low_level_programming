@@ -9,14 +9,28 @@
 
 int main(void)
 {
-	int i;
+	int i, j, k, l;
 
-	for (i = '1'; i <= '9899'; i++)
+	for (i = 0; i < 9; i++)
 	{
-		putchar('%04d', i);
-		if (i == 9899)
-			break;
-		printf(", ");
+		for (j = i + 1; j < 10; j++)
+		{
+			for (k = j + 1; k < 10 ; k++)
+			{
+				for (l = k + 1; l < 10; l++)
+				{
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(' ');
+					putchar(k + '0');
+					putchar(l + '0');
+					if (i == 7 && j == 8 && k == 9 && l == 9)
+						break;
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
 	}
 	putchar('\n');
 	return (0);
