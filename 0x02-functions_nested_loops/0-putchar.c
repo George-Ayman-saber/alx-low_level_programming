@@ -3,7 +3,7 @@
 /**
  * main - startpoint
  * Description: this is a c program that print _putchar in new line
- * Return : 0 (success)
+ * Return: 0 (success)
 */
 
 int main(void)
