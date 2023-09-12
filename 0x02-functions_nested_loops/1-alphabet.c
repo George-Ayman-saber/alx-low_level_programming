@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * main - startpoint
- * Description : this is a c program that print alphabet
+ * print_alphabet - startpoint
+ * description: this is a c program that print alphabet by using
+ * prototype void print_alphabet(void)
  * Return: 0(success)
 */
 
