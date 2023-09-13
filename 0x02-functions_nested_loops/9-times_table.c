@@ -12,8 +12,8 @@ void times_table(void)
 			{
 				l = k * j;
 				_putchar(l + '0');
-				_putchar(',');
-				_putchar(' ');
+				_putchar(44);
+				_putchar(32);
 			}
 			_putchar('\n');
 		}
