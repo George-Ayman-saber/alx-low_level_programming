@@ -1,14 +1,26 @@
-#include <unistd.h>
 #include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * print_triangle - startpoint
+ * this is a c program that print space with hash # make a triangle
+ * @size: is the variable to enter the no.
 */
 
-int _putchar(char c)
+void print_triangle(int size)
 {
-	return (write(1, &c, 1));
+	int i, j, k;
+
+	if (size <= 0)
+		putchar('\n');
+	else
+	{
+		for (i = 0; i < size; i++)
+		{
+			for (j = 0; j < size - i; j++)
+					putchar(' ');
+			for (k = 0; k <= i; k++)
+					putchar('#');
+			putchar('\n');
+		}
+	}
 }
