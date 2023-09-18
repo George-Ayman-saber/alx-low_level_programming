@@ -12,5 +12,5 @@ int 2_strlen(char *str)
 	int len;
 
 	len = sizeof(str);
-	return (len);
+	return (len*2);
 }
