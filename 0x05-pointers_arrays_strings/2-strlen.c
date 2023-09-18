@@ -7,11 +7,11 @@
  *  @str: this variable that stored the string and put it in my function
 */
 
-int _strlen(char *str)
+int _strlen(char *s)
 {
-	int len;
+	int counter;
 
-	for (len = 0; *s != '\0'; s++)
-		++len;
+	for (counter = 0; *s != '\0'; s++)
+		++counter;
 	return (len);
 }
