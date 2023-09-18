@@ -7,7 +7,7 @@
  *  @str: this variable that stored the string and put it in my function
 */
 
-int _strlen(char *str)
+int 2_strlen(char *str)
 {
 	int len;
 
