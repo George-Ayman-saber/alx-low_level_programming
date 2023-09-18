@@ -10,5 +10,6 @@
 
 int reset_to_98(int *p)
 {
-	return (*p = 98);
+	*p = 98;
+	return (*p);
 }
