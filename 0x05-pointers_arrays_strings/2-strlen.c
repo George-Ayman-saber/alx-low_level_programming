@@ -3,7 +3,7 @@
 /**
  *  _strlen - startpoint
  *  this is the c  program return len of str
- *  Return: counter 
+ *  Return: counter
  *  @s: this variable that stored the string and put it in my function
 */
 
