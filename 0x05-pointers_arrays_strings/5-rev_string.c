@@ -7,7 +7,7 @@
  * @s: this is a var stored a addres of s
 */
 
-void rev_string(char *s);
+void rev_string(char *s)
 {
 	int i = 0;
 
