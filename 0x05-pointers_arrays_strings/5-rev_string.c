@@ -21,5 +21,5 @@ void rev_string(char *s)
 	do {
 		_putchar(s[len]);
 		--len;
-	} while (len >=0)
+	} while (len >= 0);
 }
