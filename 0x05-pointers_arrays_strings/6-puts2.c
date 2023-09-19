@@ -6,9 +6,8 @@ void puts2(char *str)
 {
 	int i = 0;
 	
-	for (i = 0; (i % 2 == 0); *str++)
+	for (i = 0; (i % 2 == 0); i++)
 	{
-		_putchar(s[i]);
-		i++;
+		_putchar(str[i]);
 	}
 }
