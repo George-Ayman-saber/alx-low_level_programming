@@ -6,8 +6,12 @@ void puts2(char *str)
 {
 	int i = 0;
 	
-	for (i = 0; (i % 2 == 0); i++)
+	for (i = 0; *str != '\0'; *str++)
 	{
-		_putchar(str[i]);
+		if (i % 2 == 0)
+		       	_putchar(str[i]);
+		else
+			continue;
+		i++;
 	}
 }
