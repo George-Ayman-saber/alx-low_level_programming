@@ -18,8 +18,8 @@ void rev_string(char *s)
 		len++;
 		_putchar(s[i]);
 	}
-	for (j = len; j >= 0; j--)
-	{
-		_putchar(s[j]);
-	}
+	do {
+		_putchar(s[len]);
+		--len;
+	} while (len >=0)
 }
