@@ -11,9 +11,9 @@ void print_rev(char *s)
 {
 	int i;
 
-	for (*s = '\0'; i >= 0; s--)
+	for (*s = '\0'; i >= 0; i--)
 	{
-		i--;
+		s--;
 		_putchar(*s);
 	}
 	_putchar('\n');
