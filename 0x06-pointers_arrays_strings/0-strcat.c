@@ -8,7 +8,7 @@
  * @src: thisis the var tha cp content from it
 */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int j = 0;
