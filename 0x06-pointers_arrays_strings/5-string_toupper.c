@@ -5,7 +5,7 @@
  * this is a c program do a function that changes
  * all lowercase letters of a string to uppercase.
  * Return: 0 (success)
- * @s: this is the var stored the content that u want to make it uppercase
+ * @str: this is the var stored the content that u want to make it uppercase
 */
 
 char *string_toupper(char *s)
@@ -14,10 +14,10 @@ char *string_toupper(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((s[i] >= 97) && (s[i] <= 122))
+		if (s[i] >= 97 && s[i] <= 122)
 		{
-			s[i] = (s[i] - 32);
+			s[i] = s[i] - 32;
 		}
 	}
-	return (0);
+	return (s);
 }
