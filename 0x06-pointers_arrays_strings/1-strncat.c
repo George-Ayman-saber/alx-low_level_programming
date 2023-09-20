@@ -6,7 +6,8 @@
  * Return: dest
  * @dest: this is a var need to cp content in src to it
  * @src: thisis the var tha cp content from it
- * @n: this number of char to stop on it*/
+ * @n: this number of char to stop on it
+*/
 
 char *_strncat(char *dest, char *src, int n)
 {
@@ -15,11 +16,9 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (i = 0; dest[i]; i++)
 		;
-	for (j = 0; src[j]; j++)
+	for (j = 0; j <= n; j++)
 	{
 		dest[j + i] = src[j];
-		if (j == n)
-			break;
 	}
 	return (dest);
 }
