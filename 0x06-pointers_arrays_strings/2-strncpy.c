@@ -6,6 +6,7 @@
  * Return: dest
  * @dest:this is the var that return with the copy content
  * @src: this is the var that i copy from
+ * @n: this is the number that  i copy the content and stop to the index n
 */
 
 char *_strncpy(char *dest, char *src, int n)
