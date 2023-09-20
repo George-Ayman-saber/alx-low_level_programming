@@ -4,8 +4,8 @@
  * string_toupper - startpoint
  * this is a c program do a function that changes
  * all lowercase letters of a string to uppercase.
- * Return: 0 (success)
- * @str: this is the var stored the content that u want to make it uppercase
+ * Return: s (success)
+ * @s: this is the var stored the content that u want to make it uppercase
 */
 
 char *string_toupper(char *s)
