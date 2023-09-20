@@ -10,9 +10,11 @@
 
 void reverse_array(int *a, int n)
 {
-	int i, j, t;
+	int i = 0;
+	int j = n - 1;
+	int t;
 
-	for (i = 0, j = (n - 1); i < j; i++, j--)
+	while (i < n)
 	{
 		t = a[i];
 		a[i] = a[j];
