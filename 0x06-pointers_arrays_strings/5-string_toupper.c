@@ -1,4 +1,4 @@
-#include "main.h"i
+#include "main.h"
 
 /**
  * string_toupper - startpoint
@@ -14,7 +14,7 @@ char *string_toupper(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (((int)s[i] >= 97) || ((int)s[i] <= 122))
+		if ((s[i] > 96) || (s[i] < 123))
 		{
 			s[i] = (s[i] - 32);
 		}
