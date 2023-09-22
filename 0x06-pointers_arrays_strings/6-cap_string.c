@@ -1,60 +1,50 @@
 #include "main.h"
 
 /**
- * islower -startpoint
- * this is a c program that check if it lower or not
- * @c: this is the var stored data to check it
- * Return: c
-*/
-
-int islower(char c)
+ * is_separator - Check if character is a separator.
+ * @c: Character to check.
+ * 
+ * Return: 1 if c is a separator, otherwise 0.
+ */
+int is_separator(char c)
 {
-	return (c >= 97 && c <= 122);
-}
-
-/**
- * isdelimiter  - second point
- * this is a function that check if there delimiters or not
- * @c : this is the var stored data that i ckeck it
- * Return:(0)
-*/
-
-int isdelimiter(char c)
-{
+	char separators[] = " \t\n,;.!?\"(){}";
 	int i;
-	char delimiter[] = "\t\n,.!?\"(){}";
 
-	for (i = 0; i < (sizeof(delimiter) - 1); i++)
-		if (c == delimiter[i])
-			return (1);
-	return (0);
+	for (i = 0; separators[i]; i++)
+	{
+		if (c == separators[i])
+		{
+			return 1
+		}	
+	}
+	return 0;
 }
 
 /**
- * cap_string - startpoint
- * this is the function that do a capitalizes all words of a string.
- * @s: this is the var that stored the content want to capitalizes
- * all words of a string.
- * Return: ptr
-*/
-
+ * cap_string - Capitalizes all words of a string.
+ * @s: String to modify.
+ * 
+ * Return: Pointer to the modified string.
+ */
 char *cap_string(char *s)
 {
-	int foundDelimit = 1;
-	char *ptr = s;
+	int i;
 
-	while (*s)
+// If the first character is a lowercase letter, capitalize it
+	if (s[0] >= 'a' && s[0] <= 'z') 
 	{
-		if (isdelimiter(*s))
-			foundDelimit = 1;
-		else if (islower(*s) && foundDelimit)
+		s[0] -= ('a' - 'A');
+    	}
+	// Iterate over the string
+	for (i = 1; s[i]; i++) 
+	{
+		// If the current character is a lowercase letter and the previous character is a separator
+		if (is_separator(s[i - 1]) && s[i] >= 'a' && s[i] <= 'z') 
 		{
-			*s -= 32;
-			foundDelimiit = 0;
+			s[i] -= ('a' - 'A');
 		}
-		else
-			foundDelimit = 0;
-		s++;
-	}
-	return (ptr);
+    	}
+
+	return s;
 }
