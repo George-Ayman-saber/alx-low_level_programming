@@ -10,13 +10,13 @@
 char *leet(char *c)
 {
 	unsigned int i;
-	char keys[] = {'A', 'E', 'O', 'T', 'L'};
-	int values[] = {4, 3, 0, 7, 1 };
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int value[] = {4, 3, 0, 7, 1 };
 	char *cp = c;
 
 	while (*c)
 	{
-		for (i = 0; i < sizeof(keys) / sizeof(char); i++)
+		for (i = 0; i < (sizeof(key) / sizeof(char)); i++)
 		{
 			if (*c == keys[i] || *c == keys[i] + 32)
 			{
