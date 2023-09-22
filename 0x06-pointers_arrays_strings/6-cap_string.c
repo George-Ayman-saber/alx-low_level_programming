@@ -3,9 +3,9 @@
 /**
  * is_separator - Check if character is a separator.
  * @c: Character to check.
- * 
- * Return: 1 if c is a separator, otherwise 0.
- */
+ * Return: 1 if c is a separator, otherwise 0
+*/
+
 int is_separator(char c)
 {
 	char separators[] = " \t\n,;.!?\"(){}";
@@ -15,36 +15,32 @@ int is_separator(char c)
 	{
 		if (c == separators[i])
 		{
-			return 1
-		}	
+			return (1);
+		}
 	}
-	return 0;
+	return (0);
 }
 
 /**
- * cap_string - Capitalizes all words of a string.
+ * cap_string - Capitalizes all words of  string.
  * @s: String to modify.
- * 
  * Return: Pointer to the modified string.
- */
+*/
+
 char *cap_string(char *s)
 {
 	int i;
 
-// If the first character is a lowercase letter, capitalize it
-	if (s[0] >= 'a' && s[0] <= 'z') 
+	if (s[0] >= 'a' && s[0] <= 'z')
 	{
 		s[0] -= ('a' - 'A');
-    	}
-	// Iterate over the string
-	for (i = 1; s[i]; i++) 
+	}
+	for (i = 1; s[i]; i++)
 	{
-		// If the current character is a lowercase letter and the previous character is a separator
-		if (is_separator(s[i - 1]) && s[i] >= 'a' && s[i] <= 'z') 
+		if (is_separator(s[i - 1]) && s[i] >= 'a' && s[i] <= 'z')
 		{
 			s[i] -= ('a' - 'A');
 		}
-    	}
-
-	return s;
+	}
+	return (s);
 }
