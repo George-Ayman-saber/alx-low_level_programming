@@ -24,7 +24,7 @@ int isdelimiter(char c)
 	int i;
 	char delimiter[] = "\t\n,.!?\"(){}";
 
-	for (i = 0; i < 12; i++)
+	for (i = 0; i < (sizeof(delimiter) / sizeof(char)); i++)
 		if (c == delimiter[i])
 			return (1);
 	return (0);
@@ -40,20 +40,20 @@ int isdelimiter(char c)
 
 char *cap_string(char *s)
 {
-	int founddelimiter = 1;
+	int foundDelimit = 1;
 	char *ptr = s;
 
 	while (*s)
 	{
-		if (isdelimiter(*s))
-			founddelimiter = 1;
-		else if (islower(*s) && founddelimiter == 1)
+		if (isdelimiter(*s))i
+			foundDelimit = 1;
+		else if (islower(*s) && foundDelimit == 1)
 		{
 			*s -= 32;
-			founddelimiter = 0;
+			foundDelimit = 0;
 		}
 		else
-			founddelimiter = 0;
+			foundDelimit = 0;
 		s++;
 	}
 	return (ptr);
