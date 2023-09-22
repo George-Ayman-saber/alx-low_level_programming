@@ -11,7 +11,7 @@ char *leet(char *c)
 {
 	unsigned int i;
 	char keys[] = {'A', 'E', 'O', 'T', 'L'};
-	char values[] = {4, 3, 0, 7, 1 };
+	int values[] = {4, 3, 0, 7, 1 };
 	char *cp = c;
 
 	while (*c)
