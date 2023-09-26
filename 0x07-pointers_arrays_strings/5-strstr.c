@@ -15,18 +15,17 @@ char *_strstr(char *h, char *n)
 {
 	int i = 0;
 	int j;
-	char *p;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; h[i] != '\0'; i++)
 	{
-		if (s[i] == n[i])
+		if (h[i] == n[0])
 		{
-			for (j = 0; s[j] != '\0'; j++)
+			for (j = 0; h[j] != '\0' && h[i + j] == n[j]; j++)
 			{
-				p = &h[i + j];
+				;
 			}
-			return (p);
+			return (&h[i]);
 		}
 	}
-	return (p);
+	return (NULL);
 }
