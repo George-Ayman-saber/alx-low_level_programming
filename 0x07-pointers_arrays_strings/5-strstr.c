@@ -20,14 +20,15 @@ char *_strstr(char *h, char *n)
 		return (h);
 	for (i = 0; h[i] != '\0'; i++)
 	{
-		if (h[i] == n[0])	
+		if (h[i] == n[0])
 		{
-			for (j = 0; h[j] != '\0' && h[i + j] == n[j]; j++)
-			{					
+			for (j = 0; n[j] != '\0' && h[i + j] == n[j]; j++)
+			{
 				;
 			}
-			return (&h[i]);
+			if (n[j] == '\0')
+				return (&h[i]);
 		}
 	}
-	return (NULL);	
+	return (NULL);
 }
