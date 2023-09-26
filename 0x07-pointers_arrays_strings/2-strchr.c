@@ -3,7 +3,7 @@
 /**
  * _strchr - startpoint
  * this is a function  that locates a character in a string.
- * Returns: a pointer to the first occurrence of the character c
+ * Return: a pointer to the first occurrence of the character c
  * in the string s, or NULL if the character is not found
  * @s : this is a var stored content u want to check c in it or not
  * @c: this is the char u want to chaeck if it in s ot not
