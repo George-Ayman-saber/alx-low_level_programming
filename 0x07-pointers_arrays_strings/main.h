@@ -9,7 +9,7 @@ unsigned int _strspn(char *s, char *a);
 char *_strpbrk(char *s, char *accept);
 
 
-
+int _putchar(char c);
 
 
 
