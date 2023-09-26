@@ -12,7 +12,7 @@ void print_diagsums(int *a, int size);
 int _putchar(char c);
 void print_chessboard(char (*a)[8]);
 char *_strstr(char *haystack, char *needle);
-oid set_string(char **s, char *to);
+oid set_string(char **s, char *x);
 
 
 
