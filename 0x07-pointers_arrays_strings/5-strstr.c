@@ -16,6 +16,8 @@ char *_strstr(char *h, char *n)
 	int i = 0;
 	int j;
 
+	if (n[0] == '\0')
+		return (h);
 	for (i = 0; h[i] != '\0'; i++)
 	{
 		if (h[i] == n[0])
