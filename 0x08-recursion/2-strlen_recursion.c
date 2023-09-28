@@ -3,12 +3,12 @@
 /**
 * _strlen_recursion - find the length of a string
 * @s: pointer to the string to check
-* Return: void
+* Return: i
 */
 
 int _strlen_recursion(char *s)
 {
-	int i;
+	int i = 0;
 
 	if (*s > '\0')
 	{
