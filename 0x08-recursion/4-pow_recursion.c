@@ -4,7 +4,7 @@
  * _pow_recursion - startpoint
  * this is a c function that returns the value of x raised to the power of y.
  * @x: this is the number
- * @y: this is the number make it power to x like x**y
+ * @y: this is the number make it power to x
  * Return: x power y
 */
 
