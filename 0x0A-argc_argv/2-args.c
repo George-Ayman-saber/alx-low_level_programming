@@ -6,7 +6,7 @@
  * prints all arguments it receives.
  * @argc: this is the size of argc
  * @argv: this is the array
- * return:0
+ * Return: 0
 */
 
 int main(int argc, char *argv[])
@@ -14,9 +14,10 @@ int main(int argc, char *argv[])
 	int i = 0;
 
 	(void)argc;
-	while (i < n)
+	while (i < argc)
 	{
 		printf("%s\n", argv[i]);
+		i++;
 	}
 	return (0);
 }
