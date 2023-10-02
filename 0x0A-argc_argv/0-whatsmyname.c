@@ -1,14 +1,16 @@
 #include "main.h"
 
 /**
- * arg -startpoint
+ * main -startpoint
  * this is the c function that that prints its name, followed by a new line.
+ * @argc: this is the size of argv
+ * Return: 0
+ * @argv: this is the arg that stored the data
 */
 
-void arg(void)
+int main (int argc, char *argv[])
 {
-	char *argv[2];
-
 	printf("%s", argv[0]);
 	putchar('\n');
+	return (0);
 }
