@@ -8,7 +8,7 @@
  * @argv: this is the arg that stored the data
 */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	printf("%s", argv[0]);
 	putchar('\n');
