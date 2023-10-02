@@ -1,4 +1,4 @@
 #!/bin/bash
 git add *
-git commit -m "pointers_arrays_strings"
+git commit -m "argc_argv"
 git push -f 
