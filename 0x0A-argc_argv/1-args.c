@@ -2,12 +2,13 @@
 
 /**
  * main -startpoint
- * this is a c function that that prints the number of arguments passed into it.
+ * this is a c function that prints the number of arguments passed into it.
  * @argc: int
  * @argv: array
- * Return :0*/
+ * Return:0
+*/
 
-int main(int argc, char const **argv)
+int main(int argc, char *argv[])
 {
 	(void) argv;
 	printf("%d\n", argc - 1);
