@@ -14,12 +14,13 @@ int main(int argc, char *argv[])
 
 	if (argc <= 2)
 	{
-		printf ("Error\n");
+		printf("Error\n");
 		return (1);
 	}
 	else
 	{
 		int mul = 1;
+
 		while (i < argc)
 		{
 			mul *= argv[i];
