@@ -10,14 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 1;
-
-	if (argc <= 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	else
+	if (argc == 3)
 	{
 		int mul = 1;
 
@@ -27,5 +20,10 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", mul);
 		return (0);
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
 	}
 }
