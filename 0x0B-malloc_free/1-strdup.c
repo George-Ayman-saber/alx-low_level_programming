@@ -6,7 +6,7 @@ char *_strdup(char *str)
 {
 	char *n = malloc(sizeof(str));
 
-	if ( str == '\0')
+	if (*str == '\0')
 		return (0);
 	for (i = 0; str[i] != '\0'; i++)
 		n[i] = str[i];
