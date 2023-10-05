@@ -19,10 +19,10 @@ char *_strdup(char *str)
 		return (NULL);
 	for (size = 0; str[i] != '\0'; size++)
 		;
-	n = malloc(size * sizeof(str));
+	n = (char *)malloc(size * sizeof(str));
 	if (n == 0)
 	{
-		return (NULL);
+		return (0);
 	}
 	else
 	{
