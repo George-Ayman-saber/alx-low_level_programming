@@ -38,13 +38,18 @@ char *argstostr(int ac, char **av)
 		nc += _strlen(av[i]);
 	tab = malloc(sizeof(char) * nc + 1);
 	if (tab == 0)
-		return (NULL);
-	for (i = 0; i < ac ; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++, cmpt++)
-			tab[i] = av[i][j];
-		tab[cmpt] = '\n';
-		cmpt++;
+		return (NULL);
+	}
+	else
+	{
+		for (i = 0; i < ac ; i++)
+		{
+			for (j = 0; av[i][j] != '\0'; j++, cmpt++)
+				tab[i] = av[i][j];
+			tab[cmpt] = '\n';
+			cmpt++;
+		}
 	}
 	tab[cmpt] = '\0';
 	return (tab);
