@@ -46,5 +46,6 @@ char *argstostr(int ac, char **av)
 		tab[cmpt] = '\n';
 		cmpt++;
 	}
+	tab[cmpt] = '\0';
 	return (tab);
 }
