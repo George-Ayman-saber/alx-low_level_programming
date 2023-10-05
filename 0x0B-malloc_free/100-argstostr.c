@@ -1,5 +1,5 @@
 #include "main.h"
-
+int _strlen(char *s);
 /**
  * argstostr - startpoint
  * this is a c function that concatenates all the arguments of your program.
