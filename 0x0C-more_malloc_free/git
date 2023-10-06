@@ -1,4 +1,4 @@
 #!/bin/bash
 git add *
-git commit -m "malloc and free"
+git commit -m " more malloc and free"
 git push -f 
