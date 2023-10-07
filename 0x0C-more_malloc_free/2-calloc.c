@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * _calloc - startpoint
  * this is a c  function that allocates memory for an array, using malloc.
@@ -11,17 +11,13 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *m;
+	char *n;
 	int i;
 
-	m = malloc(nmemb * size);
-	if (m == NULL || nmemb == 0 || size == 0)
-	{
+	n = malloc(nmemb * size);
+	if (n == NULL || nmemb == 0 || size == 0)
 		return (NULL);
-	}
 	for (i = 0; i < nmemb; i++)
-	{
-		m[i] = 0;
-	}
-	return (m);
+		n[i] = 0;
+	return (n);
 }
