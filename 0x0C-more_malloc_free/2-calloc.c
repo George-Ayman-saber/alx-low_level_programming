@@ -1,24 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-
-/**
- * _memset- startpoint
- * this is a c  function that allocates memory for an array, using malloc.
- * like clloc with default 0
- * @b: this is the number u want to put it  in  all array as default
- * @s: this is a array
- * @n: this is the the size of array
- * Return: ptr
-*/
-
-char *_memset(char *s, char b, unsigned int n)
-{
-	char *ptr = s;
-
-	while (n--)
-		*s++ = b;
-	return (ptr);
-}
 
 /**
  * _calloc - startpoint
@@ -31,18 +11,15 @@ char *_memset(char *s, char b, unsigned int n)
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *n;
-	int i;
+	char *m;
+	int i = 0;
 
-	n = malloc(nmemb * sizeof(int));
-	if (n == 0)
-	{
+	m = malloc(nmemb * sizeof(int));
+	if (m = 0)
 		return (NULL);
-	}
 	if (nmemb == 0 || size == 0)
-	{
 		return (NULL);
-	}
-	_memset(n, 0, sizeof(int) * nmemb);
-	return (n);
+	for (i = 0; i < nmemb; i++)
+		m[i] = 0;
+	return (m);
 }
