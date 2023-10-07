@@ -1,5 +1,4 @@
 #include "main.h"
-int _strlen(char *s);
 
 /**
  * string_nconcat - startpoint
@@ -15,8 +14,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *m;
 	int i = 0;
 	int j = 0;
-	int k =	_strlen(*s1);
+	int k =	0;
 
+	for (; s[k] != '\0'; k++)
+		;
 	m = malloc(n + k + 1);
 	if (m == NULL)
 		return (NULL);
@@ -33,20 +34,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	m[i] = '\0';
 	return (m);
-}
-
-/**
- * _strlen - startpoint
- * this is a c functiont that count the string
- * @s: this is the pointer to the string
- * Return: size
-*/
-
-int _strlen(char *s)
-{
-	int size;
-
-	for (size = 0; s[size] != '\0'; size++)
-		;
-	return (size);
 }
