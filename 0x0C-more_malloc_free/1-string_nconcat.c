@@ -34,3 +34,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	m[i] = '\0';
 	return (m);
 }
+
+/**
+ * _strlen - startpoint
+ * this is a c functiont that count the string
+ * @s: this is the pointer to the string
+ * Return: size
+*/
+
+int _strlen(char *s)
+{
+	int size;
+
+	for (size = 0; s[size] != '\0'; size++)
+		;
+	return (size);
+}
