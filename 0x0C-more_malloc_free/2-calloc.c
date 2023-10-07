@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _calloc - startpoint
+ * _memset- startpoint
  * this is a c  function that allocates memory for an array, using malloc.
  * like clloc with default 0
  * @b: this is the number u want to put it  in  all array as default
@@ -11,7 +11,7 @@
  * Return: ptr
 */
 
-char * _memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	char *ptr = s;
 
@@ -34,7 +34,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *n;
 	int i;
 
-	n = malloc(nmemb * sizeof (int));
+	n = malloc(nmemb * sizeof(int));
 	if (n == 0 || nmemb == 0 || size == 0)
 		return (NULL);
 	for (i = 0; i < nmemb; i++)
