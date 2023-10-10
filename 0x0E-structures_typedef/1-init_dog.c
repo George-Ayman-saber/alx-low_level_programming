@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * dog - startpoint
+ * init_dog - startpoint
  * this is a function that initialize a variable of type struct dog
  * @d: this is all var in struct dog
  * @name: this is the name of the dog
@@ -15,8 +15,8 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d)
 	{
-		d -> name = name;
-		d -> age = age;
-		d -> owner = owner;
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
 	}
 }
