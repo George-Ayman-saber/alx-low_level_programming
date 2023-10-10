@@ -1,7 +1,10 @@
 #include <stdio.h>
-#ifndef _MAIN_C
-#define _MAIN_C
-#endif
+
+/**
+ * main - print the name of this source file
+ * Return: 0 always
+*/
+
 int main(void)
 {
 	printf("%s\n", __FILE__);
