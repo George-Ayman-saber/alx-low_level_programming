@@ -8,11 +8,11 @@
  *  @s: this variable that stored the string and put it in my function
 */
 
-int _strlen(char *s)
+int _strlen(const char *s)
 {
-	int counter;
+	int counter = 0;
 
-	for (counter = 0; *s != '\0'; s++)
+	while(*s)
 		++counter;
 	return (counter);
 }
@@ -36,6 +36,7 @@ char *_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+
 /**
  * dog_t *new_dog - startpoint
  * this is a  function that creates a new dog.
@@ -47,7 +48,7 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog
+	dog_t *dog;
 
 	if (!name || age < 0 || !owner)
 		return (NULL);
