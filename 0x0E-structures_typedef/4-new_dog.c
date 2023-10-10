@@ -50,11 +50,11 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog
-	
+
 	if (!name || age < 0 || !owner)
 		return (NULL);
 	dog = (dog_t *) malloc(sizeof(dog_t));
-	if (dog==NULL)
+	if (dog == NULL)
 		return (NULL);
 	dog->name = malloc(sizeof(char) * (_stlen(name) + 1));
 	if ((*dog).name == NULL)
