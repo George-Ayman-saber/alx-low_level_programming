@@ -1,4 +1,4 @@
 #!/bin/bash
 git add *
-git commit -m "malloc and free"
+git commit -m "preprocessor"
 git push -f 

@@ -1,5 +1,5 @@
 #!/bin/bash
 echo " file name"
 read var
-echo "#include \"main.h\"" > $var
+echo "#" > $var
 vi $var
