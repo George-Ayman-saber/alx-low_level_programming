@@ -29,15 +29,12 @@ int _strlen(char *s)
 
 char *_strcpy(char *dest, char *src)
 {
-	int i = -1;
-
-	do {
-		i++;
+	int i;
+	for (i = 0; src[i]; i++)
 		dest[i] = src[i];
-	} while (src[i] != '\0');
+	dest[i] = '\0';
 	return (dest);
 }
-
 /**
  * dog_t *new_dog - startpoint
  * this is a  function that creates a new dog.
