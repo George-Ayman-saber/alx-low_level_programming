@@ -1,4 +1,4 @@
-#include "3-cala.h"
+#include "3-calc.h"
 
 /**
  * main - check the code
