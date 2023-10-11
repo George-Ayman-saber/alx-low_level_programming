@@ -1,0 +1,5 @@
+#!/bin/bash
+echo " file name"
+read var
+echo "#include \"function_pointers.h\"" > $var
+vi $var
